@@ -54,6 +54,12 @@ If you have any questions or comments, feel free to contact our team on instagra
 
 * `@kyottah`
 
+Or join our Discord server:
+
+```
+https://discord.gg/kA7VRyQj
+```
+
 # Important notes
 
 This project is currently in the prerelease phase. We appreciate any comments or suggestions to improve the experience of our users.
