@@ -6,23 +6,22 @@
 
 # Introduction
 New version of the music desktop app for student programming project called **beatflow**.
-Written in HTML, CSS & JAVASCRIPT is an exciting and powerful music tool designed specifically for students and teachers. With an intuitive interface and advanced features, our program facilitates listening fun.
+Written in HTML, CSS & Javascript is an exciting and powerful music tool designed specifically for students and teachers. With an intuitive interface and advanced features, our program facilitates listening fun.
 
 # Features
 
-* **Real Time Chat:** Connect with your classmates and teachers in real time to discuss academic topics or brainstorm creative ideas.
+* **Listen to unlimited music**
 
-* **Intuitive design:** Our user interface has been carefully designed so that any student or teacher can use it without difficulty.
+* **Create your own music playlist.**
 
-* **Private and Group Messages:** Start private one-on-one conversations or create discussion groups to work on team projects.
+* **Like your favorite songs** 
 
-* **Attachments:** Share documents, images, and other files directly in chat for more effective collaboration.
+* **Personalize your account however you want** 
 
-* **Custom Notifications:** Set your notification preferences to stay informed without interrupting your workflow.
+* **Custom Notifications** 
 
 # System Requirements
 
-* Microsoft .NET Framework X.X or higher
 * Operating system: Windows 7 / 8 / 10
 
 # Get Started
@@ -33,10 +32,17 @@ Written in HTML, CSS & JAVASCRIPT is an exciting and powerful music tool designe
 https://github.com/mibichoandafugao/Music-Desktop-App.git
 ```
 
-2. Open the project in your preferred C# IDE.
+2. Open the project in your preferred code editor.
 3. Compile and run the program.
 
 **Explore the student chat and start communicating with your classmates!**
+
+# Documentation
+Read the documentation here:
+
+```
+https://kyottah.notion.site/Beatflow-Docs-c8d564c145d241a7bbfe2822a033a90a?pvs=4
+```
 
 # Contact Us
 
