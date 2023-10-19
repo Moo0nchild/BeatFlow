@@ -29,13 +29,13 @@ Written in HTML, CSS & Javascript is an exciting and powerful music tool designe
 1. Clone this repository: 
 
 ```
-https://github.com/mibichoandafugao/Music-Desktop-App.git
+https://github.com/mibichoandafugao/BeatFlow.git
 ```
 
 2. Open the project in your preferred code editor.
 3. Compile and run the program.
 
-**Explore the student chat and start communicating with your classmates!**
+**Experience music like never before with Beatflow!**
 
 # Documentation
 Read the documentation here:
