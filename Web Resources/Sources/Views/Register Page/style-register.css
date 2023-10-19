@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'poppins', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    width: 100%;
+    background-image: url("../../../../Assets/Backgrounds/Pnk_m1_blur.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    width: 400px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.beatflow-ico {
+    justify-self: center;
+    width: 256px;
+    height: 256px;  
+    margin-top: -80px;
+    margin-bottom: -80px;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+form input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+}
+
+.inputbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 25px;
+    padding: 5px;
+    border-bottom: 2px solid #fff;
+}
+
+.date-of-birth {
+    color: white;
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+.inputbox-date {
+    /* text-align: center; */
+    margin-bottom: 10px;
+    height: 25px;
+    width: 91px;
+    /* border-radius: 10px; */
+    padding: 5px;
+    border-bottom: 2px solid #fff;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: auto;
+    border-radius: 40px;
+    background-color: #FBB7D0;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.login {
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    margin: 15px 0 10px;
+}
+
+.login p a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login p a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    margin: 15px; 
+    width: 300px;
+    font-size: .9em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.terms label input {
+    margin-right: 3px;
+}
+
+.terms label a {
+    color: white;
+    text-decoration: none;
+}
+
+.terms label a:hover {
+    text-decoration: underline;
+}

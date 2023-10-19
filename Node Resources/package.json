@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "name": "music-desktop-app",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <img alt=\"Files Logo\" src=\"./Assets/Icons/Beatflow-256.png\" width=\"256\" />\r </p>",
+  "main": "../Web Resources/Sources/Views/Login Page/script-login.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "serve-static": "^1.15.0"
+  }
+}
