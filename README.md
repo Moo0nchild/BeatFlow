@@ -6,22 +6,23 @@
 
 # Introduction
 New version of the music desktop app for student programming project called **beatflow**.
-Written in HTML, CSS & Javascript is an exciting and powerful music tool designed specifically for students and teachers. With an intuitive interface and advanced features, our program facilitates listening fun.
+Written in HTML, CSS & JAVASCRIPT is an exciting and powerful music tool designed specifically for students and teachers. With an intuitive interface and advanced features, our program facilitates listening fun.
 
 # Features
 
-* **Listen to unlimited music**
+* **Real Time Chat:** Connect with your classmates and teachers in real time to discuss academic topics or brainstorm creative ideas.
 
-* **Create your own music playlist.**
+* **Intuitive design:** Our user interface has been carefully designed so that any student or teacher can use it without difficulty.
 
-* **Like your favorite songs** 
+* **Private and Group Messages:** Start private one-on-one conversations or create discussion groups to work on team projects.
 
-* **Personalize your account however you want** 
+* **Attachments:** Share documents, images, and other files directly in chat for more effective collaboration.
 
-* **Custom Notifications** 
+* **Custom Notifications:** Set your notification preferences to stay informed without interrupting your workflow.
 
 # System Requirements
 
+* Microsoft .NET Framework X.X or higher
 * Operating system: Windows 7 / 8 / 10
 
 # Get Started
@@ -29,20 +30,13 @@ Written in HTML, CSS & Javascript is an exciting and powerful music tool designe
 1. Clone this repository: 
 
 ```
-https://github.com/mibichoandafugao/BeatFlow.git
+https://github.com/mibichoandafugao/Music-Desktop-App.git
 ```
 
-2. Open the project in your preferred code editor.
+2. Open the project in your preferred C# IDE.
 3. Compile and run the program.
 
-**Experience music like never before with Beatflow!**
-
-# Documentation
-Read the documentation here:
-
-```
-https://kyottah.notion.site/Beatflow-Docs-c8d564c145d241a7bbfe2822a033a90a?pvs=4
-```
+**Explore the student chat and start communicating with your classmates!**
 
 # Contact Us
 
@@ -53,12 +47,6 @@ If you have any questions or comments, feel free to contact our team on instagra
 * `@luisv12._`
 
 * `@kyottah`
-
-Or join our Discord server:
-
-```
-https://discord.gg/kA7VRyQj
-```
 
 # Important notes
 

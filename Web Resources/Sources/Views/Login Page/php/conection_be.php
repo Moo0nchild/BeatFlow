@@ -1,5 +1,5 @@
 <?php
-    $conection = mysqli_connect("localhost", "root", "root", "DateBase");
+    $conection = mysqli_connect("localhost", "root", "root", "beatflow_database");
 
     // if ($conection) {
     //     echo 'Conexión exitosa';

@@ -1,13 +1,13 @@
 <?php
 // Verifica si se han enviado los datos desde la página 1
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Recoge los datos de la página 1
-    $email = $_POST['email_be'];
-    $day = $_POST['day_be'];
-    $month = $_POST['month_be'];
-    $year = $_POST['year_be'];
-    $password = $_POST['password_be'];
+if (isset($_GET['email']) && isset($_GET['day']) && isset($_GET['month']) && isset($_GET['year']) && isset($_GET['password'])) {
+    $email = $_GET['email'];
+    $day = $_GET['day'];
+    $month = $_GET['month'];
+    $year = $_GET['year'];
+    $password = $_GET['password'];
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Beatflow Music App</title>
     <link rel="stylesheet" href="style-username.css">
     <link rel="icon" href="../../../../Assets/Icons/Beatflow_page_png2.png">
+    <iframe src="../Preloader Page/Preloader.html" frameborder="0" style="width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 1000;"></iframe>
 </head>
 <body>
     <section>
@@ -34,10 +35,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <form method="post" action="php/Register_User_be.php" id="form"  enctype="multipart/form-data">
                 <input   type="hidden"  name="email_be" value ="<?php echo $email; ?> " required>
-                <input   type="hidden" name="password_be" value ="<?php echo $password; ?> " required>
-                <input   type="hidden" name="day_be" value ="<?php echo $day; ?> " required>
-                <input   type="hidden" name="month_be" value ="<?php echo $month; ?> " required>    
-                <input   type="hidden"  name="year_be" value ="<?php echo $year; ?> "  required>
+                <input   type="hidden" name="password_be" value ="<?php echo $password; ?>" required>
+                <input   type="hidden" name="day_be" value ="<?php echo $day; ?>" required>
+                <input   type="hidden" name="month_be" value ="<?php echo $month; ?>" required>    
+                <input   type="hidden"  name="year_be" value ="<?php echo $year; ?>"  required>
                 <input   class="inputbox" type="text" placeholder="Username" name= "username_be" >
                 <input   type="file" accept="image/*" id="input-file" hidden  name="image">
                 <button type="submit">Save</button>

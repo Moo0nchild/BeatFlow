@@ -6,13 +6,14 @@
     <title>Beatflow Music App</title>
     <link rel="stylesheet" href="style-register.css">
     <link rel="icon" href="../../../../Assets/Icons/Beatflow_page_png2.png">
+    <iframe src="../Preloader Page/Preloader.html" frameborder="0" style="width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 1000;"></iframe>
 </head>
 <body>
     <section>
         <div class="container">
             <img id="img" class="beatflow-ico" src="../../../../Assets/Icons/Beatflow_without_background_bold.ico" alt="#">
             <h2>Register</h2>
-            <form method="post" action="../Username Page/Username.php" id="form">
+            <form method="post" action="php/Register_Email.php" id="form">
                 <input id="email" class="inputbox" type="text" placeholder="Email" name="email_be" required>
                 <input id="password" class="inputbox" type="password" placeholder="Password" name="password_be" required>
                 <div>
