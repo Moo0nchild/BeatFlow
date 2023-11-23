@@ -7,6 +7,14 @@
     $releaseDate = $_POST['release_date'];
     $title = $_POST['title'];
     $songURL = $_POST['song_url'];
+ 
+    if(isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
+        $imageTmpName = $_FILES['image']['tmp_name'];
+        $songImage = file_get_contents($imageTmpName);
+    } else {
+        $songImage = ''; 
+    }
+
 
     $check_song_query = "SELECT * FROM songs WHERE SongURL='$songURL'   or Title='$title'";
     $result = $conection->query($check_song_query);
@@ -22,8 +30,13 @@
         $resultCount = $conection->query($check_song_cout_query);
         $row = $resultCount->fetch_row();
         $idSong = $row[0] + 1;
-        $query = "INSERT INTO songs (Song_id, Title, Artist, Album, ReleaseYear, Genre, SongURL) VALUES ('$idSong','$title', '$artist', '$album', '$releaseDate','$genre','$songURL')";
-        $result=$conection->query($query);
+
+        $query = "INSERT INTO songs (Song_id, Title, Artist, Album, ReleaseYear, Genre, SongURL, songImage) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        $stmt = $conection->prepare($query);
+        $stmt->bind_param("isssssss", $idSong, $title, $artist, $album, $releaseDate, $genre, $songURL, $songImage);
+
+        $result = $stmt->execute();
+
         if ($result) {
             echo '
             <script>
@@ -32,7 +45,9 @@
             </script>
             ';
         } else {
-            echo 'Error en el registro: ' . mysqli_error($conection);
+            echo 'Error en el registro: ' . $stmt->error;
         }
+
+        $stmt->close();
     }
 ?>

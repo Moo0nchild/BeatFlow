@@ -19,11 +19,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </script>
     ';
     } else {
-        header("Location: ../../Username Page/Username.php?email=" . urlencode($email));
-        header("Location: ../../Username Page/Username.php?day=" . urlencode($day));
-        header("Location: ../../Username Page/Username.php?month=" . urlencode($month));
-        header("Location: ../../Username Page/Username.php?year=" . urlencode($year));
-        header("Location: ../../Username Page/Username.php?password=" . urlencode($password));
+        header("Location: ../../Username Page/Username.php?" . 
+       "email=" . urlencode($email) . 
+       "&day=" . urlencode($day) . 
+       "&month=" . urlencode($month) . 
+       "&year=" . urlencode($year) . 
+       "&password=" . urlencode($password));
+        exit();
     }
 
 ?> 

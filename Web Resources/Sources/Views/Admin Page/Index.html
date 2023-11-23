@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Beatflow Music App</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Song Submission Form</title>
+    <link rel="icon" href="../../../../Assets/Icons/Beatflow_page_png2.png">
 </head>
 <body>
-    <h1>Song Submission Form</h1>
+    <video src="../../../../Assets/Backgrounds/Neon Lights Background 1.mp4" autoplay loop muted></video>
     <form action="php/Song_Save_be.php" method="post" enctype="multipart/form-data">
+        <h1>Song Submission</h1>
         <label for="album">Album:</label>
         <input type="text" name="album" id="album" required ><br>
 
@@ -25,6 +27,9 @@
         <label for="song_url">Song URL:</label>
         <input type="text" name="song_url" id="song_url" required ><br>
 
+        <label for="image">Song Cover:</label>
+        <input type="file" name="image" id="image" accept="image/*" required><br>
+    
         <input type="submit" value="Submit">
     </form>
 </body>

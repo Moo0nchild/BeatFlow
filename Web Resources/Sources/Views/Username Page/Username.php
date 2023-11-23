@@ -17,7 +17,6 @@ if (isset($_GET['email']) && isset($_GET['day']) && isset($_GET['month']) && iss
     <title>Beatflow Music App</title>
     <link rel="stylesheet" href="style-username.css">
     <link rel="icon" href="../../../../Assets/Icons/Beatflow_page_png2.png">
-    <iframe src="../Preloader Page/Preloader.html" frameborder="0" style="width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 1000;"></iframe>
 </head>
 <body>
     <section>

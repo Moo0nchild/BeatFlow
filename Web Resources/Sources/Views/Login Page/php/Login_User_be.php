@@ -8,10 +8,9 @@ $validate_login = mysqli_query($conection, "SELECT * FROM users WHERE (Email = '
 if (mysqli_num_rows($validate_login) > 0) {
     $user = mysqli_fetch_assoc($validate_login);
     $hashedPasswordFromDatabase = $user['PasswordUser'];
-    echo $hashedPasswordFromDatabase;
     if (password_verify($password,$hashedPasswordFromDatabase)) {
-         header("location: ../../Home Page/Home.php");
-        exit;
+        header("location: ../../Home Page/Home.php?userName=".urldecode($user['NameUser']));
+        exit();
     } else {
         echo '
             <script>
@@ -19,7 +18,7 @@ if (mysqli_num_rows($validate_login) > 0) {
                 window.location = "../Login.php";
             </script>
         ';       
-        exit;
+        exit();
     }
 } else {
     echo '
@@ -28,6 +27,6 @@ if (mysqli_num_rows($validate_login) > 0) {
             window.location = "../Login.php";
         </script>
     ';
-    exit;
+    exit();
 }
 ?>
